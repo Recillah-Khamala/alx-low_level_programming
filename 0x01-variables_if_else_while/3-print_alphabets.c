@@ -2,10 +2,10 @@
 
 /**
  * main - entry point
- * 
+ *
  * Description:  prints the alphabet in lowercase,
  * and then in uppercase, followed by a new line.
- * 
+ *
  * Return: 0
  */
 int main(void)
@@ -25,5 +25,5 @@ int main(void)
 
 	putchar('\n');
 	
-	return 0;
+	return (0);
 }
