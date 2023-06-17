@@ -12,7 +12,7 @@ int main(void)
 {
 	int tens_digit;
 	int ones_digit;
-	
+
 	for (tens_digit = 0; tens_digit <= 8; tens_digit++)
 	{
 		for (ones_digit = tens_digit + 1; ones_digit <= 9; ones_digit++)
