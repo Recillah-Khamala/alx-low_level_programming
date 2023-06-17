@@ -9,39 +9,28 @@
  */
 int main(void)
 {
-	int num1_tens;
-	int num1_ones;
-	int num2_tens;
-	int num2_ones;
-	
-	for (num1_tens = 0; num1_tens <= 9; num1_tens++)
+	int i, j;
+
+	for (i = 0; i < 100; i++)
 	{
-		for (num1_ones = 0; num1_ones <= 9; num1_ones++)
+		for (j = 0; j < 100; j++)
 		{
-			for (num2_tens = num1_tens; num2_tens <= 9; num2_tens++)
+			if (i < j)
 			{
-				int start = (num1_tens == num2_tens) ? num1_ones : 0;
-				
-				for (num2_ones = start; num2_ones <= 9; num2_ones++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
-					putchar(num1_tens + '0');
-					putchar(num1_ones + '0');
+					putchar(',');
 					putchar(' ');
-					putchar(num2_tens + '0');
-					putchar(num2_ones + '0');
-					
-					if (num1_tens != 9 || num1_ones != 9 || num2_tens != 9 || num2_ones != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
 				}
 			}
+
 		}
 	}
-	
 	putchar('\n');
-	
-	return 0;
+	return (0);
 }
-
